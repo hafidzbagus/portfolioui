@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600&family=PT+Sans:wght@400;700&display=swap");
+body {
+  font-family: "Inter", sans-serif;
+  padding-top: 50px;
+  background-color: #fffbf8;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+
+a {
+  font-weight: normal;
+  text-decoration: none !important;
+  transition: all 0.4s ease;
+}
+a:hover {
+  color: #dcbea6 !important;
+}
+h1 {
+  color: #212121;
+  font-size: 1.8em;
+  margin: 24px 0;
+}
+h4 {
+  font-size: 0.5em;
+}
+.fs-6 {
+  color: #dcbea6;
+}
+.fs-5 {
+  font-weight: bold;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 999999;
+  will-change: transform;
+  transition: transform 200ms linear;
+}
+
+.navbar-expand-sm .navbar-nav .nav-link {
+  padding: 10px 20px;
+}
+.nav-link {
+  font-size: 10px;
+  overflow: hidden;
+}
+.navbar-toggler {
+  border: 0;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  outline: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.navbar-toggler:focus {
+  outline: none;
+}
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:first-child {
+  transform: rotate(45deg);
+  top: 6px;
+}
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:nth-child(2) {
+  display: none;
+}
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:last-child {
+  transform: rotate(-45deg);
+  bottom: 1px;
+}
+.navbar-light .navbar-nav .nav-link:focus span,
+.navbar-light .navbar-nav .nav-link:hover span {
+  transform: translateY(-100%);
+}
+
+.navbar-light .navbar-toggler-icon {
+  background: none;
+}
+.navbar-toggler .navbar-toggler-icon {
+  background: #212121;
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin: 5px 0;
+  transition: all 0.4s ease;
+  position: relative;
+}
+.navbar-fixed-top.scrolled {
+  background-color: #fffbf8 !important;
+  transition: background-color 200ms linear;
+  border-bottom: 1px solid #f0f0f0;
+  position: relative;
+  top: -10px;
+}
+/* navbar */
+
+.profile {
+  position: relative;
+  top: 250px;
+}
+
+.subprofile {
+  display: inline-block;
+  vertical-align: top;
+  min-width: 260px;
+  position: relative;
+}
+
+.about-image {
+  top: 200px;
+  position: relative;
+  width: 400px;
+}
+.about {
+  top: 600px;
+  position: relative;
+}
+.hello {
+  color: #dcbea6;
+}
+.experience {
+  top: 800px;
+  position: relative;
+}
+.tools {
+  top: 1000px;
+  position: relative;
+}
+.works {
+  top: 1200px;
+  position: relative;
+}
+.getintouch {
+  top: 1400px;
+  position: relative;
+}
+.works-img {
+  width: 300px;
+}
+.linename {
+  border: 1px solid #dcbea6;
+  position: relative;
+  width: 63px;
+  top: -8px;
+  left: 90px;
+  transform: rotate(180deg);
+}
+
+.line {
+  border: 1px solid #dcbea6;
+  width: 70px;
+  transform: rotate(0deg);
+  position: relative;
+}
+.mb-4 {
+  opacity: 0.5;
+}
+.ms-5 {
+  top: 25px;
+}
+.logo-contact {
+  width: 30px;
+}
+.revealabout {
+  position: relative;
+  transform: translateX(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+.revealabout.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+.revealexp {
+  position: relative;
+  transform: translateX(-150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+.revealexp.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+.revealtools {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+.revealtools.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+.revealworks {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+.revealworks.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+.revealgetintouch {
+  position: relative;
+  transform: translateX(-150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+.revealgetintouch.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+@media (min-width: 768px) {
+  .line {
+    left: 10px;
+    top: 30px;
+  }
+}
